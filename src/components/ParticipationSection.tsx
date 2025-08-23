@@ -184,7 +184,12 @@ const ParticipationSection = () => {
 
                 {/* Main CTA */}
                 <div className="text-center lg:text-left">
-                  <Button variant="hero" size="xl" className="group">
+                  <Button 
+                    variant="hero" 
+                    size="xl" 
+                    className="group"
+                    onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSfMSrdcUHxrRthqWrngH4pZWz5J-EDBFBlSXnfkulagoew9sg/viewform', '_blank')}
+                  >
                     Register Now for ISF Junicorn 2026
                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </Button>
