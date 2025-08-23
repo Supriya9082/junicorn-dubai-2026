@@ -1,5 +1,7 @@
 import { MapPin, Building, Wifi, Car, Coffee, Users } from "lucide-react";
 
+const manipalImage = "/lovable-uploads/087d7526-cddc-4ba1-9347-708fdb1afa2f.png";
+
 const venueFeatures = [
   {
     icon: Building,
@@ -49,6 +51,15 @@ const VenueSection = () => {
 
           {/* Main Venue Info */}
           <div className="bg-white rounded-3xl p-8 md:p-12 shadow-elegant mb-12">
+            {/* Venue Image */}
+            <div className="mb-8">
+              <img
+                src={manipalImage}
+                alt="Manipal Academy of Higher Education - Dubai Campus"
+                className="w-full h-64 md:h-80 object-cover rounded-2xl shadow-elegant"
+              />
+            </div>
+            
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               {/* Venue Details */}
               <div className="space-y-6">

@@ -1,5 +1,5 @@
 import { Star, Award, Lightbulb } from "lucide-react";
-import aliImage from "@/assets/ali-al-loughani.jpg";
+const aliImage = "/lovable-uploads/2aade0ed-e9b3-45dc-ba17-fc25e0905c7a.png";
 
 const SpecialGuestSection = () => {
   return (
