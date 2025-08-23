@@ -134,60 +134,88 @@ const ParticipationSection = () => {
 
           {/* Registration Process */}
           <div className="bg-gradient-subtle rounded-3xl p-8 md:p-12">
-            <div className="text-center mb-8">
-              <h3 className="text-2xl md:text-3xl font-bold mb-4">
-                Ready to <span className="text-gradient">Register?</span>
-              </h3>
-              <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                Join us for this extraordinary summit and be part of shaping the future of innovation. 
-                Registration is simple and secure.
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-8 mb-8">
-              {/* Step 1 */}
-              <div className="text-center">
-                <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold">
-                  1
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              {/* Registration Info */}
+              <div>
+                <div className="text-center lg:text-left mb-8">
+                  <h3 className="text-2xl md:text-3xl font-bold mb-4">
+                    Ready to <span className="text-gradient">Register?</span>
+                  </h3>
+                  <p className="text-muted-foreground max-w-2xl leading-relaxed">
+                    Join us for this extraordinary summit and be part of shaping the future of innovation. 
+                    Registration is simple and secure.
+                  </p>
                 </div>
-                <h4 className="font-semibold mb-2">Choose Your Path</h4>
-                <p className="text-sm text-muted-foreground">
-                  Select your participation category from the options above
-                </p>
+
+                <div className="grid md:grid-cols-3 gap-6 mb-8">
+                  {/* Step 1 */}
+                  <div className="text-center">
+                    <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold">
+                      1
+                    </div>
+                    <h4 className="font-semibold mb-2">Choose Your Path</h4>
+                    <p className="text-sm text-muted-foreground">
+                      Select your participation category from the options above
+                    </p>
+                  </div>
+
+                  {/* Step 2 */}
+                  <div className="text-center">
+                    <div className="w-12 h-12 bg-gradient-accent rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold">
+                      2
+                    </div>
+                    <h4 className="font-semibold mb-2">Complete Registration</h4>
+                    <p className="text-sm text-muted-foreground">
+                      Fill out the registration form with your details
+                    </p>
+                  </div>
+
+                  {/* Step 3 */}
+                  <div className="text-center">
+                    <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold">
+                      3
+                    </div>
+                    <h4 className="font-semibold mb-2">Join the Summit</h4>
+                    <p className="text-sm text-muted-foreground">
+                      Receive confirmation and prepare for an amazing experience
+                    </p>
+                  </div>
+                </div>
+
+                {/* Main CTA */}
+                <div className="text-center lg:text-left">
+                  <Button variant="hero" size="xl" className="group">
+                    Register Now for ISF Junicorn 2026
+                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                  </Button>
+                  <p className="text-sm text-muted-foreground mt-4">
+                    Early bird registration available. Limited seats - secure your spot today!
+                  </p>
+                </div>
               </div>
 
-              {/* Step 2 */}
-              <div className="text-center">
-                <div className="w-12 h-12 bg-gradient-accent rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold">
-                  2
+              {/* QR Code Section */}
+              <div className="flex flex-col items-center justify-center">
+                <div className="bg-white rounded-2xl p-8 shadow-elegant text-center max-w-sm mx-auto">
+                  <h4 className="text-xl font-bold mb-4">Quick Registration</h4>
+                  <p className="text-muted-foreground mb-6 text-sm">
+                    Scan the QR code below for instant access to registration
+                  </p>
+                  
+                  <div className="relative group">
+                    <div className="absolute inset-0 bg-gradient-primary rounded-xl blur-xl opacity-20 group-hover:opacity-40 transition-opacity"></div>
+                    <img
+                      src="/lovable-uploads/70ca3ae4-1f12-4a53-af82-1ec25ac369e3.png"
+                      alt="ISF Junicorn 2026 Registration QR Code"
+                      className="relative w-48 h-48 mx-auto rounded-xl border-2 border-border/20 group-hover:border-primary/30 transition-colors"
+                    />
+                  </div>
+                  
+                  <p className="text-xs text-muted-foreground mt-4">
+                    Use your phone camera to scan and register instantly
+                  </p>
                 </div>
-                <h4 className="font-semibold mb-2">Complete Registration</h4>
-                <p className="text-sm text-muted-foreground">
-                  Fill out the registration form with your details
-                </p>
               </div>
-
-              {/* Step 3 */}
-              <div className="text-center">
-                <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold">
-                  3
-                </div>
-                <h4 className="font-semibold mb-2">Join the Summit</h4>
-                <p className="text-sm text-muted-foreground">
-                  Receive confirmation and prepare for an amazing experience
-                </p>
-              </div>
-            </div>
-
-            {/* Main CTA */}
-            <div className="text-center">
-              <Button variant="hero" size="xl" className="group">
-                Register Now for ISF Junicorn 2026
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
-              <p className="text-sm text-muted-foreground mt-4">
-                Early bird registration available. Limited seats - secure your spot today!
-              </p>
             </div>
           </div>
 
