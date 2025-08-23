@@ -1,13 +1,60 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import HeroSection from "@/components/HeroSection";
+import AboutSection from "@/components/AboutSection";
+import HighlightsSection from "@/components/HighlightsSection";
+import AgendaSection from "@/components/AgendaSection";
+import SpecialGuestSection from "@/components/SpecialGuestSection";
+import VenueSection from "@/components/VenueSection";
+import ParticipationSection from "@/components/ParticipationSection";
+import ContactSection from "@/components/ContactSection";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <main className="min-h-screen">
+      {/* Structured Data for SEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Event",
+            "name": "ISF Junicorn Global Summit 2026 - Dubai Edition",
+            "description": "Where Rural Innovation meets Global Impact! An electrifying experience bringing together 70+ top Junicorns from India and UAE.",
+            "startDate": "2026-01-10T09:00:00+04:00",
+            "endDate": "2026-01-11T18:00:00+04:00",
+            "location": {
+              "@type": "Place",
+              "name": "Manipal Academy of Higher Education",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Dubai Campus, Academic City",
+                "addressLocality": "Dubai",
+                "addressCountry": "UAE"
+              }
+            },
+            "organizer": {
+              "@type": "Organization",
+              "name": "ISF Network"
+            },
+            "offers": {
+              "@type": "Offer",
+              "url": "#participation",
+              "availability": "https://schema.org/InStock"
+            }
+          })
+        }}
+      />
+
+      <HeroSection />
+      <AboutSection />
+      <HighlightsSection />
+      <AgendaSection />
+      <SpecialGuestSection />
+      <VenueSection />
+      <ParticipationSection />
+      <ContactSection />
+      <Footer />
+    </main>
   );
 };
 
