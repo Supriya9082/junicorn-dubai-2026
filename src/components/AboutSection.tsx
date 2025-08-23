@@ -1,5 +1,4 @@
 import { Sparkles, Globe, Lightbulb } from "lucide-react";
-import innovationShowcase from "@/assets/innovation-showcase.jpg";
 
 const AboutSection = () => {
   return (
@@ -26,7 +25,7 @@ const AboutSection = () => {
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-primary rounded-2xl blur-xl opacity-30 group-hover:opacity-50 transition-opacity"></div>
               <img
-                src={innovationShowcase}
+                src="/lovable-uploads/2aade0ed-e9b3-45dc-ba17-fc25e0905c7a.png"
                 alt="Innovation Showcase"
                 className="relative rounded-2xl shadow-elegant w-full h-auto"
               />

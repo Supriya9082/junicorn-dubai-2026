@@ -122,6 +122,7 @@ const ParticipationSection = () => {
                     <Button 
                       variant={isAccent ? "accent" : "default"}
                       className="w-full group/btn"
+                      onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSfMSrdcUHxrRthqWrngH4pZWz5J-EDBFBlSXnfkulagoew9sg/viewform', '_blank')}
                     >
                       {option.cta}
                       <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
