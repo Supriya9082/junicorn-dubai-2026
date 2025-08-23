@@ -25,7 +25,7 @@ const AboutSection = () => {
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-primary rounded-2xl blur-xl opacity-30 group-hover:opacity-50 transition-opacity"></div>
               <img
-                src="src/components/phot.jpg"
+                src="/lovable-uploads/phot.jpg"
                 alt="Innovation Showcase"
                 className="relative rounded-2xl shadow-elegant w-full h-auto"
               />
