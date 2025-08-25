@@ -134,7 +134,7 @@ const ParticipationSection = () => {
           </div>
 
           {/* Registration Process */}
-          < section id="registration" className="bg-gradient-subtle rounded-3xl p-8 md:p-12">
+          <section id="registration" className="bg-gradient-subtle rounded-3xl p-8 md:p-12">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               {/* Registration Info */}
               <div>
@@ -223,7 +223,7 @@ const ParticipationSection = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </section>
 
           {/* Benefits Summary */}
           <div className="mt-16 grid md:grid-cols-4 gap-6">
