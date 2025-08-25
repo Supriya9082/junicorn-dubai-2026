@@ -13,11 +13,13 @@ const participationOptions = [
       "Welcome kit and refreshments"
     ],
     color: "primary",
-    cta: "Register as Delegate"
+    cta: "Register as Delegate",
+    qrCode: "/lovable-uploads/043bda80-8ec1-471b-a11c-a41061d637a2.png",
+    registrationUrl: "https://docs.google.com/forms/d/e/1FAIpQLScKQiqKoL_I2fxpsmQT_egWN3H0fK5cPjwIoQfInaVOnYrJlw/viewform?usp=sharing&ouid=113096482238094534521"
   },
   {
     icon: Lightbulb,
-    title: "As a Student Innovator",
+    title: "School Student Innovator",
     description: "Showcase your breakthrough innovations and compete for recognition in the student showcase.",
     features: [
       "Pitch presentation opportunity",
@@ -26,11 +28,13 @@ const participationOptions = [
       "Student networking events"
     ],
     color: "accent",
-    cta: "Apply as Innovator"
+    cta: "Apply as Innovator",
+    qrCode: "/lovable-uploads/0705a482-d054-49db-9b2c-4dbd37a173f8.png",
+    registrationUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdUKVTmS7_jiigqY2_z-KogWSZZM93J4SMNXub7OChIhtQEnA/viewform?usp=sharing&ouid=113096482238094534521"
   },
   {
     icon: Users,
-    title: "As a Mentor",
+    title: "College Student Innovator",
     description: "Share your expertise and guide the next generation of innovators and entrepreneurs.",
     features: [
       "VIP access to all sessions",
@@ -39,11 +43,13 @@ const participationOptions = [
       "Recognition as ecosystem leader"
     ],
     color: "primary",
-    cta: "Become a Mentor"
+    cta: "Register as Student",
+    qrCode: "/lovable-uploads/a2cb584b-9c09-4f73-bab5-fdb52a5708b3.png",
+    registrationUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfMSrdcUHxrRthqWrngH4pZWz5J-EDBFBlSXnfkulagoew9sg/viewform?usp=dialog"
   },
   {
     icon: DollarSign,
-    title: "As an Idea Seed Angel",
+    title: "Partners & Sponsors Registration",
     description: "Connect with promising startups and discover investment opportunities in early-stage innovations.",
     features: [
       "Exclusive investor sessions",
@@ -52,7 +58,24 @@ const participationOptions = [
       "Investment networking events"
     ],
     color: "accent",
-    cta: "Join as Angel"
+    cta: "Join as Partner",
+    qrCode: "/lovable-uploads/493434ed-80b6-48fa-abcc-c520d85b99d8.png",
+    registrationUrl: "https://docs.google.com/forms/d/e/1FAIpQLScU1rBF91QhSQLO_hcLTR_Ef8Cj3UAfR28eM85pVFl2wg_eTA/viewform?usp=sharing&ouid=113096482238094534521"
+  },
+  {
+    icon: Users,
+    title: "Guests & Dignitaries Registration",
+    description: "Special registration for distinguished guests, dignitaries, and VIP attendees to the summit.",
+    features: [
+      "VIP access to all sessions",
+      "Special networking events",
+      "Priority seating arrangements",
+      "Exclusive meet and greet opportunities"
+    ],
+    color: "primary",
+    cta: "Register as Guest",
+    qrCode: "/lovable-uploads/bcdc3396-1082-4ec1-83cb-1b80340a0ca1.png",
+    registrationUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfLEJhddSvBkCisZoR0Dbw84pFmhjtBbgTT_DFHN6CfThUsaA/viewform?usp=sharing&ouid=113096482238094534521"
   }
 ];
 
@@ -76,7 +99,7 @@ const ParticipationSection = () => {
           </div>
 
           {/* Participation Options Grid */}
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             {participationOptions.map((option, index) => {
               const Icon = option.icon;
               const isAccent = option.color === "accent";
@@ -84,7 +107,7 @@ const ParticipationSection = () => {
               return (
                 <div
                   key={index}
-                  className="bg-white rounded-2xl p-8 shadow-elegant hover:shadow-glow transition-all duration-500 group relative overflow-hidden"
+                  className="bg-white rounded-2xl p-6 shadow-elegant hover:shadow-glow transition-all duration-500 group relative overflow-hidden"
                 >
                   {/* Background Gradient */}
                   <div className={`absolute inset-0 opacity-0 group-hover:opacity-5 transition-opacity ${
@@ -93,27 +116,36 @@ const ParticipationSection = () => {
                   
                   {/* Header */}
                   <div className="relative">
-                    <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-6 ${
+                    <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-4 ${
                       isAccent ? 'bg-gradient-accent' : 'bg-gradient-primary'
                     } shadow-elegant group-hover:scale-110 transition-transform`}>
                       <Icon className="w-8 h-8 text-white" />
                     </div>
 
-                    <h3 className="text-2xl font-bold mb-3 group-hover:text-primary transition-colors">
+                    <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
                       {option.title}
                     </h3>
-                    <p className="text-muted-foreground mb-6 leading-relaxed">
+                    <p className="text-muted-foreground mb-4 leading-relaxed text-sm">
                       {option.description}
                     </p>
 
+                    {/* QR Code */}
+                    <div className="flex justify-center mb-4">
+                      <img
+                        src={option.qrCode}
+                        alt={`QR Code for ${option.title}`}
+                        className="w-24 h-24 rounded-lg border border-border/20"
+                      />
+                    </div>
+
                     {/* Features List */}
-                    <div className="space-y-3 mb-8">
-                      {option.features.map((feature, featureIndex) => (
-                        <div key={featureIndex} className="flex items-center gap-3">
-                          <div className={`w-2 h-2 rounded-full ${
+                    <div className="space-y-2 mb-6">
+                      {option.features.slice(0, 3).map((feature, featureIndex) => (
+                        <div key={featureIndex} className="flex items-center gap-2">
+                          <div className={`w-1.5 h-1.5 rounded-full ${
                             isAccent ? 'bg-accent' : 'bg-primary'
                           }`}></div>
-                          <span className="text-sm text-muted-foreground">{feature}</span>
+                          <span className="text-xs text-muted-foreground">{feature}</span>
                         </div>
                       ))}
                     </div>
@@ -121,11 +153,12 @@ const ParticipationSection = () => {
                     {/* CTA Button */}
                     <Button 
                       variant={isAccent ? "accent" : "default"}
+                      size="sm"
                       className="w-full group/btn"
-                      onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSfMSrdcUHxrRthqWrngH4pZWz5J-EDBFBlSXnfkulagoew9sg/viewform', '_blank')}
+                      onClick={() => window.open(option.registrationUrl, '_blank')}
                     >
                       {option.cta}
-                      <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+                      <ArrowRight className="w-3 h-3 group-hover/btn:translate-x-1 transition-transform" />
                     </Button>
                   </div>
                 </div>
@@ -135,93 +168,63 @@ const ParticipationSection = () => {
 
           {/* Registration Process */}
           <section id="registration" className="bg-gradient-subtle rounded-3xl p-8 md:p-12">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              {/* Registration Info */}
-              <div>
-                <div className="text-center lg:text-left mb-8">
-                  <h3 className="text-2xl md:text-3xl font-bold mb-4">
-                    Ready to <span className="text-gradient">Register?</span>
-                  </h3>
-                  <p className="text-muted-foreground max-w-2xl leading-relaxed">
-                    Join us for this extraordinary summit and be part of shaping the future of innovation. 
-                    Registration is simple and secure.
+            <div className="text-center">
+              <h3 className="text-2xl md:text-3xl font-bold mb-4">
+                Ready to <span className="text-gradient">Register?</span>
+              </h3>
+              <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-8">
+                Join us for this extraordinary summit and be part of shaping the future of innovation. 
+                Registration is simple and secure.
+              </p>
+
+              <div className="grid md:grid-cols-3 gap-6 mb-8">
+                {/* Step 1 */}
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold">
+                    1
+                  </div>
+                  <h4 className="font-semibold mb-2">Choose Your Path</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Select your participation category from the options above
                   </p>
                 </div>
 
-                <div className="grid md:grid-cols-3 gap-6 mb-8">
-                  {/* Step 1 */}
-                  <div className="text-center">
-                    <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold">
-                      1
-                    </div>
-                    <h4 className="font-semibold mb-2">Choose Your Path</h4>
-                    <p className="text-sm text-muted-foreground">
-                      Select your participation category from the options above
-                    </p>
+                {/* Step 2 */}
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-gradient-accent rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold">
+                    2
                   </div>
-
-                  {/* Step 2 */}
-                  <div className="text-center">
-                    <div className="w-12 h-12 bg-gradient-accent rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold">
-                      2
-                    </div>
-                    <h4 className="font-semibold mb-2">Complete Registration</h4>
-                    <p className="text-sm text-muted-foreground">
-                      Fill out the registration form with your details
-                    </p>
-                  </div>
-
-                  {/* Step 3 */}
-                  <div className="text-center">
-                    <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold">
-                      3
-                    </div>
-                    <h4 className="font-semibold mb-2">Join the Summit</h4>
-                    <p className="text-sm text-muted-foreground">
-                      Receive confirmation and prepare for an amazing experience
-                    </p>
-                  </div>
+                  <h4 className="font-semibold mb-2">Complete Registration</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Fill out the registration form with your details
+                  </p>
                 </div>
 
-                {/* Main CTA */}
-                <div className="text-center lg:text-left">
-                  <Button 
-                    variant="hero" 
-                    size="xl" 
-                    className="group"
-                    onClick={() => document.getElementById('participation')?.scrollIntoView({ behavior: 'smooth' })}
-                  >
-                    Register Now for ISF Junicorn 2026
-                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                  </Button>
-                  <p className="text-sm text-muted-foreground mt-4">
-                    Early bird registration available. Limited seats - secure your spot today!
+                {/* Step 3 */}
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold">
+                    3
+                  </div>
+                  <h4 className="font-semibold mb-2">Join the Summit</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Receive confirmation and prepare for an amazing experience
                   </p>
                 </div>
               </div>
 
-              {/* QR Code Section */}
-              <div className="flex flex-col items-center justify-center">
-                <div className="bg-white rounded-2xl p-8 shadow-elegant text-center max-w-sm mx-auto">
-                  <h4 className="text-xl font-bold mb-4">Quick Registration</h4>
-                  <p className="text-muted-foreground mb-6 text-sm">
-                    Scan the QR code below for instant access to registration
-                  </p>
-                  
-                  <div className="relative group">
-                    <div className="absolute inset-0 bg-gradient-primary rounded-xl blur-xl opacity-20 group-hover:opacity-40 transition-opacity"></div>
-                    <img
-                      src="/lovable-uploads/70ca3ae4-1f12-4a53-af82-1ec25ac369e3.png"
-                      alt="ISF Junicorn 2026 Registration QR Code"
-                      className="relative w-48 h-48 mx-auto rounded-xl border-2 border-border/20 group-hover:border-primary/30 transition-colors"
-                    />
-                  </div>
-                  
-                  <p className="text-xs text-muted-foreground mt-4">
-                    Use your phone camera to scan and register instantly
-                  </p>
-                </div>
-              </div>
+              {/* Main CTA */}
+              <Button 
+                variant="hero" 
+                size="xl" 
+                className="group"
+                onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSfMSrdcUHxrRthqWrngH4pZWz5J-EDBFBlSXnfkulagoew9sg/viewform', '_blank')}
+              >
+                Register Now for ISF Junicorn 2026
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
+              <p className="text-sm text-muted-foreground mt-4">
+                Early bird registration available. Limited seats - secure your spot today!
+              </p>
             </div>
           </section>
 
