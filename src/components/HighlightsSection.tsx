@@ -107,7 +107,7 @@ const HighlightsSection = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button 
-                  onClick={() => document.getElementById('registration')?.scrollIntoView({ behavior: 'smooth' })}
+                  onClick={() => document.getElementById('participation')?.scrollIntoView({ behavior: 'smooth' })}
                   className="px-8 py-4 bg-gradient-primary text-white rounded-xl font-semibold hover:shadow-glow hover:scale-105 transition-all"
                 >
                   Register Now
