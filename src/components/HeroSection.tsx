@@ -60,7 +60,7 @@ const HeroSection = () => {
               variant="hero" 
               size="xl" 
               className="group"
-              onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSfMSrdcUHxrRthqWrngH4pZWz5J-EDBFBlSXnfkulagoew9sg/viewform', '_blank')}
+              onClick={() => document.getElementById('registration')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Register Now
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
