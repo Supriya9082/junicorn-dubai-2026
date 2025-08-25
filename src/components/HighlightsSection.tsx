@@ -107,7 +107,7 @@ const HighlightsSection = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button 
-                  onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSfMSrdcUHxrRthqWrngH4pZWz5J-EDBFBlSXnfkulagoew9sg/viewform', '_blank')}
+                  onClick={() => document.getElementById('registration')?.scrollIntoView({ behavior: 'smooth' })}
                   className="px-8 py-4 bg-gradient-primary text-white rounded-xl font-semibold hover:shadow-glow hover:scale-105 transition-all"
                 >
                   Register Now
