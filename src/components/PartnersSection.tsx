@@ -37,18 +37,17 @@ const PartnerGroup = ({ title, partners, icon: Icon, gradient }: {
       </div>
       <h3 className="text-xl font-bold">{title}</h3>
     </div>
-    <div className="grid gap-4">
+    <div className="grid grid-cols-2 gap-4">
       {partners.map((partner, index) => (
-        <div key={index} className="flex items-center gap-4 p-3 rounded-lg hover:bg-muted transition-colors">
+        <div key={index} className="flex items-center justify-center p-4 rounded-lg hover:bg-muted transition-colors">
           <img
             src={partner.logo}
             alt={`${partner.name} logo`}
-            className="w-12 h-12 object-contain rounded-lg bg-white p-1"
+            className="w-16 h-16 object-contain rounded-lg bg-white p-2"
             onError={(e) => {
               e.currentTarget.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQ4IiBoZWlnaHQ9IjQ4IiByeD0iOCIgZmlsbD0iI0Y4RjlGQSIvPgo8cGF0aCBkPSJNMjQgMTJDMjYuMjA5MSAxMiAyOCAxMy43OTA5IDI4IDE2QzI4IDE4LjIwOTEgMjYuMjA5MSAyMCAyNCAyMEMyMS43OTA5IDIwIDIwIDE4LjIwOTEgMjAgMTZDMjAgMTMuNzkwOSAyMS43OTA5IDEyIDI0IDEyWiIgZmlsbD0iIzlDQTNBRiIvPgo8cGF0aCBkPSJNMTQgMzJMMjQgMjJMMzQgMzJIMTRaIiBmaWxsPSIjOUNBM0FGIi8+Cjwvc3ZnPgo=';
             }}
           />
-          <span className="font-medium">{partner.name}</span>
         </div>
       ))}
     </div>
