@@ -60,7 +60,7 @@ const HeroSection = () => {
               variant="hero" 
               size="xl" 
               className="group"
-              onClick={() => document.getElementById('registration')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => document.getElementById('participation')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Register Now
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
