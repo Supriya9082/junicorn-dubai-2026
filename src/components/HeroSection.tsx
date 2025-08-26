@@ -39,7 +39,7 @@ const HeroSection = () => {
 
           {/* Tagline */}
           <p className="text-xl md:text-2xl lg:text-3xl font-medium mb-8 text-white/90 max-w-4xl mx-auto">
-            Where Rural Innovation meets Global Impact!!
+            Where Rural Innovation meets Global Impact!!!
           </p>
 
           {/* Event Details */}
