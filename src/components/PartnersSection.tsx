@@ -2,7 +2,7 @@ import { Building2, Handshake, Award, Users } from "lucide-react";
 
 const partnersData = {
   strategicPartners: [
-    { name: "Impact Hub Hyderabad", logo: "/lovable-uploads/043bda80-8ec1-471b-a11c-a41061d637a2.png" },
+    { name: "Impact Hub Hyderabad", logo: "public/lovable-uploads/Impact-Hub-Hyderabad.png" },
     { name: "IPF (Indian People's Forum)", logo: "/lovable-uploads/05b64bc7-f30b-4199-9671-439c67fb1045.png" }
   ],
   partnerships: [
@@ -10,17 +10,17 @@ const partnersData = {
     { name: "Quality Engineering Foundation", logo: "/lovable-uploads/e65473c8-d852-499e-b059-bdc5622461eb.png" }
   ],
   sponsors: [
-    { name: "Dr Hiremath", logo: "/lovable-uploads/2aade0ed-e9b3-45dc-ba17-fc25e0905c7a.png" }
+    { name: "Dr Hiremath", logo: "public/lovable-uploads/hiremath.png" }
   ],
   supportingPartners: [
     { name: "One World One Family", logo: "/lovable-uploads/ae2fd653-1a64-4b69-9414-ade379d4198c.png" },
-    { name: "Eminus Global", logo: "/lovable-uploads/087d7526-cddc-4ba1-9347-708fdb1afa2f.png" },
-    { name: "The Global Innovation", logo: "/lovable-uploads/0705a482-d054-49db-9b2c-4dbd37a173f8.png" },
+    { name: "Eminus Global", logo: "public/lovable-uploads/Eminus-eGlobal.png" },
+    { name: "The Global Innovation", logo: "public/lovable-uploads/Global-Innovation-2nd-1024x1024.png" },
     { name: "Saima Labs", logo: "/lovable-uploads/a44925e6-2d0b-47ca-8a3a-eb76d2ce046c.png" }
   ],
   poweredBy: [
     { name: "Mondee", logo: "/lovable-uploads/10234cb2-174d-485d-a3a4-bab6ea354103.png" },
-    { name: "Power Mech", logo: "/lovable-uploads/70ca3ae4-1f12-4a53-af82-1ec25ac369e3.png" }
+    { name: "Power Mech", logo: "public/lovable-uploads/mech.png" }
   ]
 };
 
