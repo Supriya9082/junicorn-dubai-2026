@@ -43,7 +43,7 @@ const PartnerGroup = ({ title, partners, icon: Icon, gradient }: {
           <img
             src={partner.logo}
             alt={`${partner.name} logo`}
-            className="w-16 h-16 object-contain rounded-lg bg-white p-2"
+            className="w-24 h-24 object-contain rounded-lg bg-white p-3"
             onError={(e) => {
               e.currentTarget.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQ4IiBoZWlnaHQ9IjQ4IiByeD0iOCIgZmlsbD0iI0Y4RjlGQSIvPgo8cGF0aCBkPSJNMjQgMTJDMjYuMjA5MSAxMiAyOCAxMy43OTA5IDI4IDE2QzI4IDE4LjIwOTEgMjYuMjA5MSAyMCAyNCAyMEMyMS43OTA5IDIwIDIwIDE4LjIwOTEgMjAgMTZDMjAgMTMuNzkwOSAyMS43OTA5IDEyIDI0IDEyWiIgZmlsbD0iIzlDQTNBRiIvPgo8cGF0aCBkPSJNMTQgMzJMMjQgMjJMMzQgMzJIMTRaIiBmaWxsPSIjOUNBM0FGIi8+Cjwvc3ZnPgo=';
             }}
