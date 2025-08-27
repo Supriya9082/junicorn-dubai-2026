@@ -107,11 +107,10 @@ const ContactSection = () => {
             <div className="grid md:grid-cols-3 gap-6">
               {phoneNumbers.map((phone, index) => (
                 <div key={index} className="text-center group">
-                  <div className="text-3xl mb-3">{phone.icon}</div>
-                  <div className="font-semibold text-lg mb-1">{phone.region}</div>
+                  <div className="text-4xl mb-3">{phone.icon}</div>
                   <a
                     href={`tel:${phone.number}`}
-                    className="text-primary hover:text-primary/80 transition-colors font-medium"
+                    className="text-primary hover:text-primary/80 transition-colors font-medium text-lg"
                   >
                     {phone.number}
                   </a>
