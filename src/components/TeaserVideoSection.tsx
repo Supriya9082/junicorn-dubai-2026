@@ -42,12 +42,13 @@ const TeaserVideoSection = () => {
               <div className="relative group">
                 <div className="aspect-video bg-gradient-subtle rounded-2xl overflow-hidden shadow-elegant">
                   <iframe
-                    src="https://www.youtube.com/embed/wmGRwa3e1f0"
-                    title="Junicorn Summit 2026 Teaser"
-                    className="w-full h-full"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  />
+                     src="https://www.youtube.com/embed/wmGRwa3e1f0"
+                     title="Junicorn Summit 2026 Teaser"
+                     className="w-full h-full"
+                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                     allowFullScreen
+                   />
+
                 </div>
                 <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-sm rounded-lg px-3 py-1">
                   <span className="text-white text-sm font-medium">2:30</span>
