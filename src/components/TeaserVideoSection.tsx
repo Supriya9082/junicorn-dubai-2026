@@ -42,7 +42,7 @@ const TeaserVideoSection = () => {
               <div className="relative group">
                 <div className="aspect-video bg-gradient-subtle rounded-2xl overflow-hidden shadow-elegant">
                  <iframe
-                      src="https://www.youtube.com/embed/wmGRwa3e1f0?autoplay=1&mute=0&loop=1&playlist=wmGRwa3e1f0&controls=0&modestbranding=1&showinfo=0"
+                      src="https://www.youtube.com/embed/wmGRwa3e1f0?autoplay=1&mute=1&loop=1&playlist=wmGRwa3e1f0&controls=0&modestbranding=1&showinfo=0"
 
 
                     title="Junicorn Summit 2026 Teaser"
