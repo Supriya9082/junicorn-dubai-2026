@@ -26,7 +26,7 @@ const TeaserVideoSection = () => {
                   <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
                   <span className="text-sm font-medium">Now Playing</span>
                 </div>
-                <div className="text-sm text-muted-foreground">Duration: 2:30</div>
+                <div className="text-sm text-muted-foreground"></div>
               </div>
 
               <button 
