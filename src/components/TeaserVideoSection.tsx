@@ -42,7 +42,7 @@ const TeaserVideoSection = () => {
               <div className="relative group">
                 <div className="aspect-video bg-gradient-subtle rounded-2xl overflow-hidden shadow-elegant">
                   <iframe
-                    src="https://youtu.be/wmGRwa3e1f0?si=pA7R_IKnIp_1_KN_"
+                    src="https://www.youtube.com/embed/wmGRwa3e1f0"
                     title="Junicorn Summit 2026 Teaser"
                     className="w-full h-full"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
