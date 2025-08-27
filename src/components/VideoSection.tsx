@@ -4,14 +4,14 @@ const videos = [
   {
     id: 1,
     title: "Grand Launch of ISF Junicorns 2026",
-    description: "Grand Launch of ISF Junicorns 2026 by global humanitarian leader Sadguru Sri Madhusudan Sai at Muddenahalli - special thanks to our mentor, founder and global Chairman JA Chowdary Garu. We had a very grand launch with Dr JA Garu, Sathyendra, Ravuri, Padma, Dr Viswanath Hiremath, Nishant in presence of guest of honor, Dr Abu Abdullah entrepreneur philanthropist and business man Emirati who has agreed to help ISF Junicorns 2026.",
+    description: "Grand Launch of ISF Junicorns 2026 by global humanitarian leader Sadguru Sri Madhusudan Sai at Muddenahalli - special thanks to our mentor, founder, and global Chairman JA Chowdary Garu We had a very grand launch of ISF Junicorns 2026 with Dr JA Garu, Sathyendra, Ravuri, Padma, Dr Viswanath Hiremath, Dr Karthik Ramesh, and Nishant in the presence of the guest of honor, Dr Abu Abdullah entrepreneur philanthropist, and businessman Emirati community who has agreed to help ISF Junicorns 2026. A lot of UAE residents and Emirati locals were present.",
     thumbnail: "https://via.placeholder.com/640x360/ff6600/ffffff?text=Grand+Launch",
     embedUrl: "https://www.youtube.com/embed/E-Dxt8oDtts", // ✅ fixed
   },
   {
     id: 2,
     title: "Speech by Dr. Karthik Ramesh",
-    description: "The speech delivered on behalf of Dr JA Chowdary Garu and entire ISF Junicorns team present. Special thanks to Sadguru for the blessed opportunity",
+    description: "The speech delivered by  Dr. Karthik Ramesh, President ISF Middle East, on behalf of Dr JA Chowdary is Garu, and the entire ISF Junicorns team.Special thanks to Sadguru for the blessed opportunity. Grand Launch of ISF Junicorns 2026 by global humanitarian leader Sadguru Sri Madhusudan Sai at Muddenahalli - special thanks to our mentor, founder, and global Chairman JA Chowdary Garu.",
     thumbnail: "https://via.placeholder.com/640x360/00cc66/ffffff?text=Speech+Video",
     embedUrl: "https://www.youtube.com/embed/_KZ0YSRGUG8", // ✅ fixed
   }
