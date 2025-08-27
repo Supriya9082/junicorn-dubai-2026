@@ -100,17 +100,17 @@ const ContactSection = () => {
               </div>
               <h3 className="text-2xl font-bold mb-2">Call Us Directly</h3>
               <p className="text-muted-foreground">
-                Speak with our team for immediate assistance
+                🌍 Speak with our global team for immediate assistance
               </p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-6">
               {phoneNumbers.map((phone, index) => (
                 <div key={index} className="text-center group">
-                  <div className="text-4xl mb-3">{phone.icon}</div>
+                  <div className="text-5xl mb-4 transform group-hover:scale-110 transition-transform duration-300">{phone.icon}</div>
                   <a
                     href={`tel:${phone.number}`}
-                    className="text-primary hover:text-primary/80 transition-colors font-medium text-lg"
+                    className="text-primary hover:text-primary/80 transition-colors font-semibold text-lg block bg-gradient-subtle px-4 py-3 rounded-xl hover:bg-primary/10"
                   >
                     {phone.number}
                   </a>

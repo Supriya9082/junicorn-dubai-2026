@@ -3,14 +3,6 @@ import { Play, Video } from "lucide-react";
 const videos = [
   {
     id: 1,
-    title: "Junicorn Summit 2026 Teaser",
-    description: "Get a glimpse of what awaits at the most prestigious startup summit in the region",
-    thumbnail: "https://via.placeholder.com/640x360/0066ff/ffffff?text=Teaser+Video",
-    embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Placeholder URL
-    duration: "2:30"
-  },
-  {
-    id: 2,
     title: "Grand Launch of ISF Junicorns 2026",
     description: "Grand Launch of ISF Junicorns 2026 by global humanitarian leader Sadguru Sri Madhusudan Sai at Muddenahalli - special thanks to our mentor, founder and global Chairman JA Chowdary Garu. We had a very grand launch with Dr JA Garu, Sathyendra, Ravuri, Padma, Dr Viswanath Hiremath, Nishant in presence of guest of honor, Dr Abu Abdullah entrepreneur philanthropist and business man Emirati who has agreed to help ISF Junicorns 2026.",
     thumbnail: "https://via.placeholder.com/640x360/ff6600/ffffff?text=Grand+Launch",
@@ -18,7 +10,7 @@ const videos = [
     duration: "15:45"
   },
   {
-    id: 3,
+    id: 2,
     title: "Speech by Dr JA Chowdary Garu",
     description: "The speech delivered on behalf of Dr JA Chowdary Garu and entire ISF Junicorns team present. Special thanks to Sadguru for the blessed opportunity",
     thumbnail: "https://via.placeholder.com/640x360/00cc66/ffffff?text=Speech+Video",
@@ -42,7 +34,7 @@ const VideoSection = () => {
               <span className="text-gradient">Event Videos</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Experience the journey of ISF Junicorns 2026 through these exclusive videos showcasing our grand launch and key moments
+              Watch the grand launch ceremony and inspiring speeches from the ISF Junicorns 2026 event
             </p>
           </div>
 
