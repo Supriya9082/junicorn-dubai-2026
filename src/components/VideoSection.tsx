@@ -6,16 +6,14 @@ const videos = [
     title: "Grand Launch of ISF Junicorns 2026",
     description: "Grand Launch of ISF Junicorns 2026 by global humanitarian leader Sadguru Sri Madhusudan Sai at Muddenahalli - special thanks to our mentor, founder and global Chairman JA Chowdary Garu. We had a very grand launch with Dr JA Garu, Sathyendra, Ravuri, Padma, Dr Viswanath Hiremath, Nishant in presence of guest of honor, Dr Abu Abdullah entrepreneur philanthropist and business man Emirati who has agreed to help ISF Junicorns 2026.",
     thumbnail: "https://via.placeholder.com/640x360/ff6600/ffffff?text=Grand+Launch",
-    embedUrl: "https://youtu.be/E-Dxt8oDtts?si=hLUga7w6nPoBvymp", // Placeholder URL
-    
+    embedUrl: "https://www.youtube.com/embed/E-Dxt8oDtts", // ✅ fixed
   },
   {
     id: 2,
-    title: "Speech by Dr JA Chowdary Garu",
+    title: "Speech by Dr. Karthik Ramesh",
     description: "The speech delivered on behalf of Dr JA Chowdary Garu and entire ISF Junicorns team present. Special thanks to Sadguru for the blessed opportunity",
     thumbnail: "https://via.placeholder.com/640x360/00cc66/ffffff?text=Speech+Video",
-    embedUrl: "https://youtu.be/_KZ0YSRGUG8?si=s8Eu6v9S7rJ8nqcN", // Placeholder URL
-    
+    embedUrl: "https://www.youtube.com/embed/_KZ0YSRGUG8", // ✅ fixed
   }
 ];
 
