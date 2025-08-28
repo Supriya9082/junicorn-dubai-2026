@@ -39,7 +39,7 @@ const HeroSection = () => {
 
           {/* Tagline */}
           <p className="text-xl md:text-2xl lg:text-3xl font-medium mb-8 text-white/90 max-w-4xl mx-auto">
-            Where Rural Innovation meets Global Impact!!!
+            Where Rural Innovation meets Global Impact!
           </p>
 
           {/* Event Details */}
@@ -50,7 +50,9 @@ const HeroSection = () => {
             </div>
             <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2">
               <MapPin className="w-5 h-5 text-accent" />
-              <span>Dubai, UAE</span>
+              <span>Manipal Academy of Higher Education
+Dubai Campus, Academic City
+Dubai, UAE</span>
             </div>
           </div>
 
