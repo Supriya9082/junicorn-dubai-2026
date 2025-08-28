@@ -12,7 +12,7 @@ const HeroSection = () => {
           backgroundImage: `url(${heroBg})`,
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-transparent dark:from-secondary/90 dark:via-secondary/70"></div>
       </div>
 
       {/* Animated background elements */}
