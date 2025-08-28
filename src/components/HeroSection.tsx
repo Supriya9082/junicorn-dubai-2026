@@ -12,7 +12,7 @@ const HeroSection = () => {
           backgroundImage: `url(${heroBg})`,
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-transparent dark:from-secondary/90 dark:via-secondary/70"></div>
       </div>
 
       {/* Animated background elements */}
@@ -39,7 +39,7 @@ const HeroSection = () => {
 
           {/* Tagline */}
           <p className="text-xl md:text-2xl lg:text-3xl font-medium mb-8 text-white/90 max-w-4xl mx-auto">
-            Where Rural Innovation meets Global Impact!!
+            Where Rural Innovation meets Global Impact!
           </p>
 
           {/* Event Details */}
