@@ -58,7 +58,7 @@ const VideoSection = () => {
                       />
                     </div>
                     <div className="absolute top-4 right-4 bg-background/50 backdrop-blur-sm rounded-lg px-3 py-1">
-                      <span className="text-foreground text-sm font-medium">{video.duration}</span>
+                      <span className="text-foreground text-sm font-medium">Video {video.id}</span>
                     </div>
                   </div>
                 </div>
