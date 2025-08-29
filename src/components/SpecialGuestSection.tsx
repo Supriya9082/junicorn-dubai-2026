@@ -21,7 +21,7 @@ const SpecialGuestSection = () => {
           </div>
 
           {/* Main Guest Card */}
-          <div className="relative bg-white rounded-3xl p-8 md:p-12 shadow-elegant overflow-hidden">
+          <div className="relative bg-card rounded-3xl p-8 md:p-12 shadow-elegant overflow-hidden">
             {/* Background Decorations */}
             <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-accent opacity-5 rounded-full -translate-y-32 translate-x-32"></div>
             <div className="absolute bottom-0 left-0 w-48 h-48 bg-gradient-primary opacity-5 rounded-full translate-y-24 -translate-x-24"></div>
@@ -36,7 +36,7 @@ const SpecialGuestSection = () => {
                   className="relative rounded-2xl w-full max-w-md mx-auto shadow-elegant"
                 />
                 {/* Badge */}
-                <div className="absolute -top-4 -right-4 bg-gradient-accent text-white px-4 py-2 rounded-full font-semibold shadow-accent">
+                <div className="absolute -top-4 -right-4 bg-gradient-accent text-accent-foreground px-4 py-2 rounded-full font-semibold shadow-accent">
                   Brand Ambassador
                 </div>
               </div>
@@ -56,7 +56,7 @@ const SpecialGuestSection = () => {
                 <div className="space-y-4">
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center">
-                      <Award className="w-6 h-6 text-white" />
+                      <Award className="w-6 h-6 text-primary-foreground" />
                     </div>
                     <div>
                       <h4 className="font-semibold">Innovation Leader</h4>
@@ -66,7 +66,7 @@ const SpecialGuestSection = () => {
 
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-gradient-accent rounded-xl flex items-center justify-center">
-                      <Lightbulb className="w-6 h-6 text-white" />
+                      <Lightbulb className="w-6 h-6 text-accent-foreground" />
                     </div>
                     <div>
                       <h4 className="font-semibold">Young Entrepreneur</h4>
@@ -76,7 +76,7 @@ const SpecialGuestSection = () => {
 
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center">
-                      <Star className="w-6 h-6 text-white" />
+                      <Star className="w-6 h-6 text-primary-foreground" />
                     </div>
                     <div>
                       <h4 className="font-semibold">Global Impact</h4>
@@ -105,13 +105,13 @@ const SpecialGuestSection = () => {
                 Ali will be participating in keynote sessions, panel discussions, and networking events throughout the summit.
               </p>
               <div className="flex flex-wrap justify-center gap-4">
-                <div className="bg-white rounded-lg px-4 py-2 shadow-sm">
+                <div className="bg-card rounded-lg px-4 py-2 shadow-sm">
                   <span className="text-sm font-semibold text-primary">Keynote Speaker</span>
                 </div>
-                <div className="bg-white rounded-lg px-4 py-2 shadow-sm">
+                <div className="bg-card rounded-lg px-4 py-2 shadow-sm">
                   <span className="text-sm font-semibold text-accent">Innovation Mentor</span>
                 </div>
-                <div className="bg-white rounded-lg px-4 py-2 shadow-sm">
+                <div className="bg-card rounded-lg px-4 py-2 shadow-sm">
                   <span className="text-sm font-semibold text-primary">Panel Moderator</span>
                 </div>
               </div>

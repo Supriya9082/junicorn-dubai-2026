@@ -67,7 +67,7 @@ const HighlightsSection = () => {
               return (
                 <div
                   key={index}
-                  className="group relative bg-white rounded-2xl p-8 shadow-elegant hover:shadow-glow transition-all duration-500 hover:-translate-y-2"
+                  className="group relative bg-card rounded-2xl p-8 shadow-elegant hover:shadow-glow transition-all duration-500 hover:-translate-y-2"
                 >
                   {/* Background Gradient */}
                   <div className={`absolute inset-0 opacity-0 group-hover:opacity-5 transition-opacity rounded-2xl ${
@@ -78,7 +78,7 @@ const HighlightsSection = () => {
                   <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-6 ${
                     isAccent ? 'bg-gradient-accent' : 'bg-gradient-primary'
                   } shadow-elegant`}>
-                    <Icon className="w-8 h-8 text-white" />
+                    <Icon className={`w-8 h-8 ${isAccent ? 'text-accent-foreground' : 'text-primary-foreground'}`} />
                   </div>
 
                   {/* Content */}
@@ -108,7 +108,7 @@ const HighlightsSection = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button 
                   onClick={() => document.getElementById('participation')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="px-8 py-4 bg-gradient-primary text-white rounded-xl font-semibold hover:shadow-glow hover:scale-105 transition-all"
+                  className="px-8 py-4 bg-gradient-primary text-primary-foreground rounded-xl font-semibold hover:shadow-glow hover:scale-105 transition-all"
                 >
                   Register Now
                 </button>

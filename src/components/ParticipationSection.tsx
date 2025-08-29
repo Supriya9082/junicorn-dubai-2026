@@ -107,7 +107,7 @@ const ParticipationSection = () => {
               return (
                 <div
                   key={index}
-                  className="bg-white rounded-2xl p-6 shadow-elegant hover:shadow-glow transition-all duration-500 group relative overflow-hidden"
+                  className="bg-card rounded-2xl p-6 shadow-elegant hover:shadow-glow transition-all duration-500 group relative overflow-hidden"
                 >
                   {/* Background Gradient */}
                   <div className={`absolute inset-0 opacity-0 group-hover:opacity-5 transition-opacity ${
@@ -119,7 +119,7 @@ const ParticipationSection = () => {
                     <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-4 ${
                       isAccent ? 'bg-gradient-accent' : 'bg-gradient-primary'
                     } shadow-elegant group-hover:scale-110 transition-transform`}>
-                      <Icon className="w-8 h-8 text-white" />
+                      <Icon className={`w-8 h-8 ${isAccent ? 'text-accent-foreground' : 'text-primary-foreground'}`} />
                     </div>
 
                     <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
@@ -180,7 +180,7 @@ const ParticipationSection = () => {
               <div className="grid md:grid-cols-3 gap-6 mb-8">
                 {/* Step 1 */}
                 <div className="text-center">
-                  <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold">
+                  <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4 text-primary-foreground font-bold">
                     1
                   </div>
                   <h4 className="font-semibold mb-2">Choose Your Path</h4>
@@ -191,7 +191,7 @@ const ParticipationSection = () => {
 
                 {/* Step 2 */}
                 <div className="text-center">
-                  <div className="w-12 h-12 bg-gradient-accent rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold">
+                  <div className="w-12 h-12 bg-gradient-accent rounded-full flex items-center justify-center mx-auto mb-4 text-accent-foreground font-bold">
                     2
                   </div>
                   <h4 className="font-semibold mb-2">Complete Registration</h4>
@@ -202,7 +202,7 @@ const ParticipationSection = () => {
 
                 {/* Step 3 */}
                 <div className="text-center">
-                  <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold">
+                  <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4 text-primary-foreground font-bold">
                     3
                   </div>
                   <h4 className="font-semibold mb-2">Join the Summit</h4>

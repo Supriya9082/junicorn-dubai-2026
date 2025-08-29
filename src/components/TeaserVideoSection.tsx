@@ -23,7 +23,7 @@ const TeaserVideoSection = () => {
 
               <div className="flex items-center gap-4 mb-6">
                 <div className="flex items-center gap-2">
-                  <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
+                  <div className="w-3 h-3 bg-destructive rounded-full animate-pulse"></div>
                   <span className="text-sm font-medium">Now Playing</span>
                 </div>
                 <div className="text-sm text-muted-foreground"></div>
@@ -31,7 +31,7 @@ const TeaserVideoSection = () => {
 
               <button 
                 onClick={() => document.getElementById('participation')?.scrollIntoView({ behavior: 'smooth' })}
-                className="bg-gradient-primary text-white px-8 py-3 rounded-xl font-semibold hover:opacity-90 transition-opacity"
+                className="bg-gradient-primary text-primary-foreground px-8 py-3 rounded-xl font-semibold hover:opacity-90 transition-opacity"
               >
                 Register for Summit
               </button>
@@ -53,8 +53,8 @@ const TeaserVideoSection = () => {
 
 
                 </div>
-                <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-sm rounded-lg px-3 py-1">
-                  <span className="text-white text-sm font-medium">2:30</span>
+                <div className="absolute top-4 right-4 bg-background/50 backdrop-blur-sm rounded-lg px-3 py-1">
+                  <span className="text-foreground text-sm font-medium">2:30</span>
                 </div>
               </div>
             </div>

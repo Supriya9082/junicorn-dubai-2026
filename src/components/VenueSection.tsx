@@ -50,7 +50,7 @@ const VenueSection = () => {
           </div>
 
           {/* Main Venue Info */}
-          <div className="bg-white rounded-3xl p-8 md:p-12 shadow-elegant mb-12">
+          <div className="bg-card rounded-3xl p-8 md:p-12 shadow-elegant mb-12">
             {/* Venue Image */}
             <div className="mb-8">
               <img
@@ -123,10 +123,10 @@ const VenueSection = () => {
                     className="rounded-2xl"
                   ></iframe>
                 </div>
-                <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm rounded-lg p-3">
+                <div className="absolute bottom-4 left-4 bg-background/90 backdrop-blur-sm rounded-lg p-3">
                   <div className="flex items-center gap-2">
                     <div className="w-3 h-3 bg-primary rounded-full"></div>
-                    <span className="text-sm font-semibold">Summit Location</span>
+                    <span className="text-sm font-semibold text-foreground">Summit Location</span>
                   </div>
                 </div>
               </div>
@@ -141,10 +141,10 @@ const VenueSection = () => {
               return (
                 <div
                   key={index}
-                  className="bg-white rounded-xl p-6 shadow-elegant hover:shadow-glow transition-all duration-300 group"
+                  className="bg-card rounded-xl p-6 shadow-elegant hover:shadow-glow transition-all duration-300 group"
                 >
                   <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                    <Icon className="w-6 h-6 text-white" />
+                    <Icon className="w-6 h-6 text-primary-foreground" />
                   </div>
                   <h3 className="font-semibold mb-2 group-hover:text-primary transition-colors">
                     {feature.title}
@@ -158,7 +158,7 @@ const VenueSection = () => {
           </div>
 
           {/* Transportation Info */}
-          <div className="bg-white rounded-2xl p-8 shadow-elegant">
+          <div className="bg-card rounded-2xl p-8 shadow-elegant">
             <h3 className="text-xl font-bold mb-6">Getting to the Venue</h3>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="text-center">

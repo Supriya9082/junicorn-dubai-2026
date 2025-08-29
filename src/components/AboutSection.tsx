@@ -37,7 +37,7 @@ const AboutSection = () => {
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center flex-shrink-0">
-                    <Globe className="w-6 h-6 text-white" />
+                    <Globe className="w-6 h-6 text-primary-foreground" />
                   </div>
                   <div>
                     <h3 className="text-xl font-bold mb-2">Global Innovation Platform</h3>
@@ -49,7 +49,7 @@ const AboutSection = () => {
 
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-gradient-accent rounded-xl flex items-center justify-center flex-shrink-0">
-                    <Lightbulb className="w-6 h-6 text-white" />
+                    <Lightbulb className="w-6 h-6 text-accent-foreground" />
                   </div>
                   <div>
                     <h3 className="text-xl font-bold mb-2">Breakthrough Ideas</h3>
@@ -61,7 +61,7 @@ const AboutSection = () => {
 
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center flex-shrink-0">
-                    <Sparkles className="w-6 h-6 text-white" />
+                    <Sparkles className="w-6 h-6 text-primary-foreground" />
                   </div>
                   <div>
                     <h3 className="text-xl font-bold mb-2">Networking Excellence</h3>
@@ -73,7 +73,7 @@ const AboutSection = () => {
               </div>
 
               {/* Key Numbers */}
-              <div className="bg-white rounded-2xl p-6 shadow-elegant">
+              <div className="bg-card rounded-2xl p-6 shadow-elegant">
                 <h4 className="text-lg font-bold mb-4 text-center">Event Highlights</h4>
                 <div className="grid grid-cols-2 gap-4 text-center">
                   <div>
