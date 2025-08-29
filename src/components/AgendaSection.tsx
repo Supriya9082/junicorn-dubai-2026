@@ -65,12 +65,12 @@ const AgendaSection = () => {
                   <div key={index} className={`flex items-center ${isLeft ? 'flex-row' : 'flex-row-reverse'}`}>
                     {/* Content Card */}
                     <div className={`w-5/12 ${isLeft ? 'pr-8' : 'pl-8'}`}>
-                      <div className="bg-white rounded-2xl p-8 shadow-elegant hover:shadow-glow transition-all duration-500 group">
+                      <div className="bg-card rounded-2xl p-8 shadow-elegant hover:shadow-glow transition-all duration-500 group">
                         <div className="flex items-start gap-4">
                           <div className={`w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 ${
                             isAccent ? 'bg-gradient-accent' : 'bg-gradient-primary'
                           }`}>
-                            <Icon className="w-6 h-6 text-white" />
+                            <Icon className={`w-6 h-6 ${isAccent ? 'text-accent-foreground' : 'text-primary-foreground'}`} />
                           </div>
                           <div className="flex-1">
                             <div className={`inline-block px-3 py-1 rounded-full text-xs font-semibold mb-3 ${
@@ -110,7 +110,7 @@ const AgendaSection = () => {
 
           {/* Additional Info */}
           <div className="mt-16 grid md:grid-cols-2 gap-8">
-            <div className="bg-white rounded-2xl p-8 shadow-elegant">
+            <div className="bg-card rounded-2xl p-8 shadow-elegant">
               <h3 className="text-xl font-bold mb-4 text-primary">Day 1 Highlights</h3>
               <ul className="space-y-3 text-muted-foreground">
                 <li className="flex items-center gap-2">
@@ -132,7 +132,7 @@ const AgendaSection = () => {
               </ul>
             </div>
 
-            <div className="bg-white rounded-2xl p-8 shadow-elegant">
+            <div className="bg-card rounded-2xl p-8 shadow-elegant">
               <h3 className="text-xl font-bold mb-4 text-accent">Day 2 Highlights</h3>
               <ul className="space-y-3 text-muted-foreground">
                 <li className="flex items-center gap-2">

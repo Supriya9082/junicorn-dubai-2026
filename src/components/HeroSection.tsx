@@ -22,10 +22,10 @@ const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 text-center text-white">
+      <div className="relative z-10 container mx-auto px-4 text-center text-primary-foreground">
         <div className="max-w-5xl mx-auto">
           {/* Event Badge */}
-          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-6 py-2 mb-8">
+          <div className="inline-flex items-center gap-2 bg-primary-foreground/10 backdrop-blur-sm border border-primary-foreground/20 rounded-full px-6 py-2 mb-8">
             <span className="text-accent font-semibold">Global Innovation Summit</span>
             <span className="w-2 h-2 bg-accent rounded-full animate-pulse"></span>
           </div>
@@ -34,21 +34,21 @@ const HeroSection = () => {
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight">
             <span className="block text-gradient-accent">ISF Junicorn</span>
             <span className="block">Global Summit</span>
-            <span className="block text-4xl md:text-5xl lg:text-6xl font-semibold text-white/90">2026 – Dubai Edition</span>
+            <span className="block text-4xl md:text-5xl lg:text-6xl font-semibold text-primary-foreground/90">2026 – Dubai Edition</span>
           </h1>
 
           {/* Tagline */}
-          <p className="text-xl md:text-2xl lg:text-3xl font-medium mb-8 text-white/90 max-w-4xl mx-auto">
+          <p className="text-xl md:text-2xl lg:text-3xl font-medium mb-8 text-primary-foreground/90 max-w-4xl mx-auto">
             Where Rural Innovation meets Global Impact!
           </p>
 
           {/* Event Details */}
           <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-12 text-lg">
-            <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2">
+            <div className="flex items-center gap-2 bg-primary-foreground/10 backdrop-blur-sm rounded-full px-4 py-2">
               <Calendar className="w-5 h-5 text-accent" />
               <span>10th & 11th January 2026</span>
             </div>
-            <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2">
+            <div className="flex items-center gap-2 bg-primary-foreground/10 backdrop-blur-sm rounded-full px-4 py-2">
               <MapPin className="w-5 h-5 text-accent" />
               <span>Manipal Academy of Higher Education
 Dubai Campus, Academic City
@@ -80,15 +80,15 @@ Dubai, UAE</span>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 max-w-3xl mx-auto">
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-accent mb-2">70+</div>
-              <div className="text-white/80">Top Junicorns</div>
+              <div className="text-primary-foreground/80">Top Junicorns</div>
             </div>
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-accent mb-2">2</div>
-              <div className="text-white/80">Days of Innovation</div>
+              <div className="text-primary-foreground/80">Days of Innovation</div>
             </div>
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-accent mb-2">Global</div>
-              <div className="text-white/80">Impact</div>
+              <div className="text-primary-foreground/80">Impact</div>
             </div>
           </div>
         </div>

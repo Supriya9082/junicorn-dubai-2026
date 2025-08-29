@@ -63,12 +63,12 @@ const ContactSection = () => {
               return (
                 <div
                   key={index}
-                  className="bg-white rounded-2xl p-8 shadow-elegant hover:shadow-glow transition-all duration-500 group"
+                  className="bg-card rounded-2xl p-8 shadow-elegant hover:shadow-glow transition-all duration-500 group"
                 >
                   <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-6 ${
                     isAccent ? 'bg-gradient-accent' : 'bg-gradient-primary'
                   } shadow-elegant group-hover:scale-110 transition-transform`}>
-                    <Icon className="w-8 h-8 text-white" />
+                    <Icon className={`w-8 h-8 ${isAccent ? 'text-accent-foreground' : 'text-primary-foreground'}`} />
                   </div>
 
                   <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
@@ -93,10 +93,10 @@ const ContactSection = () => {
           </div>
 
           {/* Phone Numbers */}
-          <div className="bg-white rounded-2xl p-8 shadow-elegant mb-12">
+          <div className="bg-card rounded-2xl p-8 shadow-elegant mb-12">
             <div className="text-center mb-8">
               <div className="w-16 h-16 bg-gradient-primary rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <Phone className="w-8 h-8 text-white" />
+                <Phone className="w-8 h-8 text-primary-foreground" />
               </div>
               <h3 className="text-2xl font-bold mb-2">Call Us Directly</h3>
               <p className="text-muted-foreground">
@@ -120,11 +120,11 @@ const ContactSection = () => {
           </div>
 
           {/* Event Location Reference */}
-          <div className="bg-white rounded-2xl p-8 shadow-elegant">
+          <div className="bg-card rounded-2xl p-8 shadow-elegant">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <div className="w-12 h-12 bg-gradient-accent rounded-xl flex items-center justify-center mb-4">
-                  <MapPin className="w-6 h-6 text-white" />
+                  <MapPin className="w-6 h-6 text-accent-foreground" />
                 </div>
                 <h3 className="text-xl font-bold mb-2">Event Location</h3>
                 <p className="text-muted-foreground mb-4">

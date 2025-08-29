@@ -33,7 +33,7 @@ const PartnerGroup = ({ title, partners, icon: Icon, gradient }: {
   <div className="bg-card rounded-2xl p-6 shadow-elegant hover:shadow-2xl transition-all duration-300">
     <div className="flex items-center gap-3 mb-6">
       <div className={`w-12 h-12 ${gradient} rounded-xl flex items-center justify-center`}>
-        <Icon className="w-6 h-6 text-white" />
+        <Icon className="w-6 h-6 text-primary-foreground" />
       </div>
       <h3 className="text-xl font-bold">{title}</h3>
     </div>
@@ -43,7 +43,7 @@ const PartnerGroup = ({ title, partners, icon: Icon, gradient }: {
           <img
             src={partner.logo}
             alt={`${partner.name} logo`}
-            className="w-48 h-48 object-contain rounded-lg bg-white p-4"
+            className="w-48 h-48 object-contain rounded-lg bg-background p-4"
             onError={(e) => {
               e.currentTarget.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQ4IiBoZWlnaHQ9IjQ4IiByeD0iOCIgZmlsbD0iI0Y4RjlGQSIvPgo8cGF0aCBkPSJNMjQgMTJDMjYuMjA5MSAxMiAyOCAxMy43OTA5IDI4IDE2QzI4IDE4LjIwOTEgMjYuMjA5MSAyMCAyNCAyMEMyMS43OTA5IDIwIDIwIDE4LjIwOTEgMjAgMTZDMjAgMTMuNzkwOSAyMS43OTA5IDEyIDI0IDEyWiIgZmlsbD0iIzlDQTNBRiIvPgo8cGF0aCBkPSJNMTQgMzJMMjQgMjJMMzQgMzJIMTRaIiBmaWxsPSIjOUNBM0FGIi8+Cjwvc3ZnPgo=';
             }}

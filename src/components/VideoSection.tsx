@@ -57,18 +57,18 @@ const VideoSection = () => {
                         allowFullScreen
                       />
                     </div>
-                    <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-sm rounded-lg px-3 py-1">
-                      <span className="text-white text-sm font-medium">{video.duration}</span>
+                    <div className="absolute top-4 right-4 bg-background/50 backdrop-blur-sm rounded-lg px-3 py-1">
+                      <span className="text-foreground text-sm font-medium">{video.duration}</span>
                     </div>
                   </div>
                 </div>
 
                 {/* Video Content */}
                 <div className={`${index % 2 === 1 ? 'lg:col-start-1' : ''}`}>
-                  <div className="bg-white rounded-2xl p-8 shadow-elegant h-full">
+                  <div className="bg-card rounded-2xl p-8 shadow-elegant h-full">
                     <div className="flex items-center gap-3 mb-4">
                       <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center">
-                        <Play className="w-6 h-6 text-white" />
+                        <Play className="w-6 h-6 text-primary-foreground" />
                       </div>
                       <div className="text-sm text-primary font-semibold bg-primary/10 px-3 py-1 rounded-full">
                         Video {video.id}
@@ -91,15 +91,15 @@ const VideoSection = () => {
           {/* Call to Action */}
           <div className="mt-16 text-center">
             <div className="bg-gradient-primary rounded-2xl p-8 shadow-elegant">
-              <h3 className="text-2xl font-bold text-white mb-4">
+              <h3 className="text-2xl font-bold text-primary-foreground mb-4">
                 Join Us at ISF Junicorns 2026
               </h3>
-              <p className="text-white/90 mb-6 max-w-2xl mx-auto">
+              <p className="text-primary-foreground/90 mb-6 max-w-2xl mx-auto">
                 Be part of this historic summit and witness innovation, entrepreneurship, and collaboration at its finest
               </p>
               <button 
                 onClick={() => document.getElementById('participation')?.scrollIntoView({ behavior: 'smooth' })}
-                className="bg-white text-primary px-8 py-3 rounded-xl font-semibold hover:bg-white/90 transition-colors"
+                className="bg-primary-foreground text-primary px-8 py-3 rounded-xl font-semibold hover:bg-primary-foreground/90 transition-colors"
               >
                 Register Now
               </button>
